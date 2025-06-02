@@ -4,6 +4,79 @@ Assignments Done by ME..!!
 ## Encapsulation
 Encapsulation means hiding the internal details of a class and only exposing what is necessary. It protects data by keeping variables private and allowing access through public methods (getters/setters).
 
+## Examples Explained
+## 1. Person Class
+```
+Public variable: name (accessible directly)
+
+Private variable: __age (accessed only via get_age() and set_age() methods)
+```
+Demonstrates hiding age and controlling access with methods.
+
+## 2. Employee and Manager Classes
+```
+Protected variable: _salary in Employee (accessible in child class Manager)
+```
+Shows how protected members can be accessed by subclasses but are not meant to be accessed outside the class hierarchy.
+
+## 3. BankAccount Class
+```
+Private variable: __balance
+```
+Methods to safely deposit and withdraw money while ensuring balance never goes negative.
+
+Encapsulation protects balance from direct modification.
+
+## 4. Car Class
+```
+Public: make
+
+Protected: _model
+
+Private: __price
+```
+Methods to get/set price and display all attributes.
+
+Shows use of different access levels and controlled access to sensitive data.
+
+## 5. Vehicle and Car (Inheritance)
+Vehicle has public, protected, and private variables.
+
+Child class Car can access protected and public directly but accesses private only via methods.
+
+Demonstrates encapsulation combined with inheritance.
+
+## 6. Rectangle Class
+```
+Private attributes: __width and __height
+```
+Getters and setters to control dimension changes (validate positive values).
+
+@property used for computed attribute area.
+
+Shows encapsulation with property decorator.
+
+## 7. Employee Class with Annual Salary
+```
+Private __name and __salary attributes.
+
+Getters and setters to manage them.
+
+annual_salary property calculates salary * 12.
+```
+Combines encapsulation and computed properties for convenience.
+
+## Key Takeaways
+Use private variables (__var) to hide data from outside.
+
+Use protected variables (_var) to indicate variables for subclass use.
+
+Use getter and setter methods to safely access and modify private variables.
+
+Use properties (@property) for computed or controlled access.
+
+Encapsulation protects data integrity and controls how important variables are accessed and modified.
+
 ## Abstraction
 Abstraction means showing only the important features and hiding the complex details. It helps to simplify the interaction with objects by exposing only relevant methods.
 
