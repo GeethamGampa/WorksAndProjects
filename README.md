@@ -37,3 +37,63 @@ Multiprocessing allows a program to run multiple processes at the same time, usi
 
 ## SQL (Structured Query Language)
 SQL is a language used to manage and manipulate relational databases. It allows you to create, read, update, and delete data with commands like SELECT, INSERT, UPDATE, and DELETE.
+
+# School Database with SQLite
+This project demonstrates basic SQL operations using Python's sqlite3 module to create and manage a simple school database.
+
+Database Overview
+```
+Database name: school.db
+
+Table: students
+
+Columns:
+
+id (INTEGER, Primary Key, Auto-increment)
+
+first_name (TEXT)
+
+last_name (TEXT)
+
+address (TEXT)
+
+roll_no (INTEGER)
+
+section (TEXT)
+```
+## Operations Demonstrated
+1. Create Table
+Drops existing students table if it exists.
+
+Creates a new students table with specified columns.
+
+2. Insert Records
+Inserts 100 student records into the table with sample names, cities, roll numbers, and sections.
+
+Also demonstrates inserting one additional student separately.
+
+3. Select Records
+Retrieves and prints all columns for all students.
+
+Retrieves and prints only first and last names of all students.
+
+4. Update Records
+Updates the section of a student with a specific roll_no (e.g., roll_no = 10).
+
+5. Delete Records
+Deletes a student record with a specific roll_no (e.g., roll_no = 20).
+
+## Key SQL Commands Used
+```
+CREATE TABLE — Create the table structure
+
+INSERT INTO — Insert new rows
+
+SELECT — Query data
+
+UPDATE — Modify existing data
+
+DELETE — Remove rows
+
+DROP TABLE IF EXISTS — Delete table if it exists (to reset)
+```
